@@ -10,7 +10,7 @@ const Study = () => {
 					alignItems={["center", "center", null, null]}
 					px='10'
 					mx={"auto"}
-					pt='14'>
+					pt={["5", "5", "14", "14"]}>
 					<Box
 						as='section'
 						flex={"1"}
@@ -32,7 +32,9 @@ const Study = () => {
 					<Box
 						as='section'
 						flex={"1"}
-						textAlign={"start"}
+						// textAlign={"start"}
+						// textAlign={"justify"}
+						textAlign={["start", "start", "justify", "justify"]}
 						mb={["14", "14", null, null]}
 						order={[1, 2, 1, 2]}>
 						<Heading

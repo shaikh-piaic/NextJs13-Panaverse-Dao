@@ -14,7 +14,7 @@ export default function Home() {
 	return (
 		<>
 			<Hero2 />
-			<Box as='main' w='100%'>
+			<Box as='main' w='100%' px={10} mx={"auto"}>
 				<About />
 				<Description />
 				<Study />

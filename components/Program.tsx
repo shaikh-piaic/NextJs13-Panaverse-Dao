@@ -20,6 +20,7 @@ import bcc from "../public/bcc.jpg";
 import cnc from "../public/cnc.jpg";
 import gab from "../public/gab.jpg";
 import npa from "../public/npa.jpg";
+import Link from "next/link";
 interface Card {
 	Title: string;
 	Img: StaticImageData;
@@ -72,31 +73,43 @@ const Program = () => {
 							]}
 							gap={4}>
 							<GridItem>
-								<CourseCard
-									Title='Artificial Intelligence and Deep Learning'
-									Img={ai}
-								/>
+								<Link href={"/ai"}>
+									<CourseCard
+										Title='Artificial Intelligence and Deep Learning'
+										Img={ai}
+									/>
+								</Link>
 							</GridItem>
 							<GridItem>
-								<CourseCard Title='Ambient Computing and IoT' Img={iot} />
+								<Link href={"/iot"}>
+									<CourseCard Title='Ambient Computing and IoT' Img={iot} />
+								</Link>
 							</GridItem>
 							<GridItem>
-								<CourseCard Title='Cloud-Native Computing' Img={cnc} />
+								<Link href={"/cnc"}>
+									<CourseCard Title='Cloud-Native Computing' Img={cnc} />
+								</Link>
 							</GridItem>
 							<GridItem>
-								<CourseCard
-									Title='Web 3.0 (Blockchain) and Metaverse'
-									Img={bcc}
-								/>
+								<Link href={"/bcc"}>
+									<CourseCard
+										Title='Web 3.0 (Blockchain) and Metaverse'
+										Img={bcc}
+									/>
+								</Link>
 							</GridItem>
 							<GridItem>
-								<CourseCard Title='Genomics and Bioinformatics' Img={gab} />
+								<Link href={"/gab"}>
+									<CourseCard Title='Genomics and Bioinformatics' Img={gab} />
+								</Link>
 							</GridItem>
 							<GridItem>
-								<CourseCard
-									Title='Network Programmability and Automation'
-									Img={npa}
-								/>
+								<Link href={"/npa"}>
+									<CourseCard
+										Title='Network Programmability and Automation'
+										Img={npa}
+									/>
+								</Link>
 							</GridItem>
 						</Grid>
 					</Box>

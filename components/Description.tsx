@@ -21,11 +21,12 @@ const Description = () => {
 					alignItems={["center", "center", null, null]}
 					px='10'
 					mx={"auto"}
-					pt='14'>
+					pt={["5", "5", "14", "14"]}>
 					<Box
 						as='section'
 						flex={"1"}
-						textAlign={"start"}
+						// textAlign={"start"}
+						textAlign={["start", "start", "justify", "justify"]}
 						mb={["14", "14", null, null]}>
 						<Heading
 							fontSize={["xl", "2xl", "3xl", "4xl"]}
@@ -36,6 +37,7 @@ const Description = () => {
 						<Text
 							fontSize={["md", "lg", "xl", "2xl"]}
 							// fontWeight={"medium"}
+							// textAlign={"justify"}
 							mt={"1"}>
 							In this brand-new type of curriculum, students will learn how to
 							make money and boost exports in the classroom and will begin doing

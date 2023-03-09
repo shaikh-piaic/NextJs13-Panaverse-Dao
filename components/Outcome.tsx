@@ -11,12 +11,13 @@ const Outcome = () => {
 					alignItems={["center", "center", null, null]}
 					px='10'
 					mx={"auto"}
-					pt='14'>
+					pt={["5", "5", "14", "14"]}>
 					<Box
 						as='section'
 						flex={"1"}
-						textAlign={"start"}
-						mb={["14", "14", null, null]}>
+						// textAlign={"start"}
+						textAlign={["start", "start", "justify", "justify"]}
+						mb={["5", "5", null, null]}>
 						<Text
 							fontSize={["xl", "2xl", "3xl", "4xl"]}
 							fontWeight={["medium", "semibold", "bold", "extrabold"]}

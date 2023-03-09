@@ -21,6 +21,8 @@ const Navbar = () => {
 	return (
 		<>
 			<Box
+				mx={"auto"}
+				px={10}
 				position={"sticky"}
 				top={0}
 				zIndex={1}
@@ -48,28 +50,39 @@ const Navbar = () => {
 								Courses
 							</MenuButton>
 							<MenuList>
-								<MenuItem as={"a"} href='/ai'>
-									<Text fontSize={"sm"}>Artificial Intelligence (AI)</Text>
+								<MenuItem>
+									<Link href={"/ai"}>
+										<Text fontSize={"sm"}>Artificial Intelligence (AI)</Text>
+									</Link>
 								</MenuItem>
-								<MenuItem as={"a"} href='/iot'>
-									<Text fontSize={"sm"}>IoT and Ambient Computing (IOT)</Text>
+								<MenuItem>
+									<Link href={"/iot"}>
+										<Text fontSize={"sm"}>IoT and Ambient Computing (IOT)</Text>
+									</Link>
 								</MenuItem>
-								<MenuItem as={"a"} href='/cnc'>
-									<Text fontSize={"sm"}>Cloud-Native Computing (CNC)</Text>
+								<MenuItem>
+									<Link href={"/cnc"}>
+										<Text fontSize={"sm"}>Cloud-Native Computing (CNC)</Text>
+									</Link>
 								</MenuItem>
-								<MenuItem as={"a"} href='/bcc'>
-									<Text fontSize={"sm"}>BlockChain Computing (BCC)</Text>
+								<MenuItem>
+									<Link href={"/bcc"}>
+										<Text fontSize={"sm"}>BlockChain Computing (BCC)</Text>
+									</Link>
 								</MenuItem>
-								{/* <MenuItem as={"a"} href='/bcc'>
-									<Text fontSize={"sm"}>Metaverse & Web 3.0 Developer (MWD)</Text>
-								</MenuItem> */}
-								<MenuItem as={"a"} href='/gab'>
-									<Text fontSize={"sm"}>Genomics and Bioinformatics (GaB)</Text>
+								<MenuItem>
+									<Link href={"/gab"}>
+										<Text fontSize={"sm"}>
+											Genomics and Bioinformatics (GaB)
+										</Text>
+									</Link>
 								</MenuItem>
-								<MenuItem as={"a"} href='/npa'>
-									<Text fontSize={"sm"}>
-										Network Programmability and Automation (NPA)
-									</Text>
+								<MenuItem>
+									<Link href={"/npa"}>
+										<Text fontSize={"sm"}>
+											Network Programmability and Automation (NPA)
+										</Text>
+									</Link>
 								</MenuItem>
 							</MenuList>
 						</Menu>

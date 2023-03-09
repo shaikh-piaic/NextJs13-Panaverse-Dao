@@ -7,10 +7,13 @@ const About = () => {
 			<Box as='main' w='100%'>
 				<Container w={"100%"} maxW={"8xl"} mx={"auto"}>
 					<Flex flexDir={"column"} alignItems={"center"} mx={"auto"}>
-						<Box as='section' w={"100%"}>
+						<Box
+							as='section'
+							w={"100%"}
+							textAlign={["start", "start", "justify", "justify"]}>
 							<Heading
 								mt={"4"}
-								textAlign={"center"}
+								// textAlign={"center"}
 								fontSize={["xl", "2xl", "3xl", "4xl"]}
 								fontWeight={["medium", "semibold", "bold", "extrabold"]}>
 								About Panaverse DAO
@@ -18,7 +21,7 @@ const About = () => {
 							<Text
 								mt={"5"}
 								mb={"10"}
-								textAlign={"center"}
+								// textAlign={"center"}
 								fontSize={["md", "lg", "xl", "2xl"]}>
 								The Future of the Web is Web 3.0, Metaverse, and Edge Computing.
 								Panaverse DAO is a movement to spread these technolgies
