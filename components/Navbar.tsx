@@ -38,7 +38,7 @@ const Navbar = () => {
 					align={"center"}
 					justify='space-between'>
 					<Image src={Logo.src} w='24' alt='DAO Logo' />
-					<HStack spacing='5'>
+					<HStack spacing={["2", "2", "5", "5"]}>
 						<Link href={"/"}>
 							<Button variant='nav'>Home</Button>
 						</Link>

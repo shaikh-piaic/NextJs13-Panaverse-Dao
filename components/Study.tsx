@@ -8,7 +8,7 @@ const Study = () => {
 				<Flex
 					flexDir={["column", "column", "column", "row"]}
 					alignItems={["center", "center", null, null]}
-					px='10'
+					// px='10'
 					mx={"auto"}
 					pt={["5", "5", "14", "14"]}>
 					<Box
